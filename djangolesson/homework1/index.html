@@ -290,11 +290,12 @@
                         <div class="card-body">
                             <form>
                                 <div class="mb-3">
-                                    <input  name="name" type="text" class="form-control" id="exampleInputPassword1"
+                                    <input name="name" type="text" class="form-control" id="exampleInputPassword1"
                                            placeholder="Имя">
                                 </div>
                                 <div class="mb-3">
-                                    <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"
+                                    <input name="email" type="email" class="form-control" id="exampleInputEmail1"
+                                           placeholder="Email"
                                            aria-describedby="emailHelp">
                                 </div>
                                 <button type="submit" class="btn btn-primary">Отправить</button>
@@ -302,101 +303,127 @@
                         </div>
                     </div>
                 </div>
+                <header>
+                    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                        <h1 class="display-4 fw-normal text-body-emphasis">FAQ</h1>
+                        <p class="fs-5 text-body-secondary">Часто задаваемые вопросы</p>
+                    </div>
+                </header>
+                <div class="row">
+                    <div class="col-4">
+                        <p>
+                            <button class="w-100 btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSale" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                Как купить?
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseSale">
+                            <div class="card card-body">
+                                Посмотрел.
+                                Понравилось?
+                                Купил.
+                                Не понравилось?
+                                Посмотрел еще раз :)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            <button class="w-100 btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseDelivery" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                Как доставить?
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseDelivery">
+                            <div class="card card-body">
+                                Оплатил, указал адрес, выбрал дату и время, а мы все привезли, возможно даже вовремя
+                                :)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <p>
+                            <button class="w-100 btn btn-primary" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseWarranty" aria-expanded="false"
+                                    aria-controls="collapseExample">
+                                Какая гарантия?
+                            </button>
+                        </p>
+                        <div class="collapse" id="collapseWarranty">
+                            <div class="card card-body">
+                                Никаких гарантий, что поделать... Но есть гарантия от производителя, указана в
+                                карточке
+                                товара
+                                :)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">номер</th>
+                        <th scope="col">название товара</th>
+                        <th scope="col">цена за штуку</th>
+                        <th scope="col">количество</th>
+                        <th scope="col">итоговая сумма</th>
+                        <th scope="col">статус заказа</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Кофе</td>
+                        <td>150</td>
+                        <td>100</td>
+                        <td>1500</td>
+                        <td>
+                            <div class="alert alert-primary p-1 m-0" role="alert">
+                                новый
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Чай</td>
+                        <td>150</td>
+                        <td>1000</td>
+                        <td>15000</td>
+                        <td>
+                            <div class="alert alert-warning p-1 m-0" role="alert">
+                                обработка
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Колеса r15(зима)</td>
+                        <td>5500</td>
+                        <td>4</td>
+                        <td>22000</td>
+                        <td>
+                            <div class="alert alert-success p-1 m-0" role="alert">
+                                обработан
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Игровая видеокарта RTX5090</td>
+                        <td>300000</td>
+                        <td>1</td>
+                        <td>300000</td>
+                        <td>
+                            <div class="alert alert-danger p-1 m-0" role="alert">
+                                отмена
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
         </main>
-        <div class="card">
-            <header>
-                <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                    <h1 class="display-4 fw-normal text-body-emphasis">FAQ</h1>
-                    <p class="fs-5 text-body-secondary">Часто задаваемые вопросы</p>
-                </div>
-            </header>
-            <div class="card">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseSale" aria-expanded="false" aria-controls="collapseExample">
-                    Как купить?
-                </button>
-                <div class="collapse" id="collapseSale">
-                    <div class="card card-body">
-                        Посмотрел.
-                        Понравилось?
-                        Купил.
-                        Не понравилось?
-                        Посмотрел еще раз :)
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseDelivery" aria-expanded="false" aria-controls="collapseExample">
-                    Как доставить?
-                </button>
-                <div class="collapse" id="collapseDelivery">
-                    <div class="card card-body">
-                        Оплатил, указал адрес, выбрал дату и время, а мы все привезли, возможно даже вовремя :)
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseWarranty" aria-expanded="false" aria-controls="collapseExample">
-                    Какая гарантия?
-                </button>
-                <div class="collapse" id="collapseWarranty">
-                    <div class="card card-body">
-                        Никаких гарантий, что поделать... Но есть гарантия от производителя, указана в карточке товара
-                        :)
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">номер</th>
-                    <th scope="col">название товара</th>
-                    <th scope="col">цена за штуку</th>
-                    <th scope="col">количество</th>
-                    <th scope="col">итоговая сумма</th>
-                    <th scope="col">статус заказа</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Кофе</td>
-                    <td>150</td>
-                    <td>100</td>
-                    <td>1500</td>
-                    <td class="table-primary">новый</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Чай</td>
-                    <td>150</td>
-                    <td>1000</td>
-                    <td>15000</td>
-                    <td class="table-warning">обработка</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Колеса r15(зима)</td>
-                    <td>5500</td>
-                    <td>4</td>
-                    <td>22000</td>
-                    <td class="table-success">обработан</td>
-                </tr>
-                <tr>
-                    <th scope="row">4</th>
-                    <td>Игровая видеокарта RTX5090</td>
-                    <td>300000</td>
-                    <td>1</td>
-                    <td>300000</td>
-                    <td class="table-danger">отмена</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
     </div>
 
 
